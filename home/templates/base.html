@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="600">
+	{%load static %}
+	<title> Vsite</title>
+	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-inverse " id="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/headlines">Rapid News</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav1">
+                    <span class="sr-only"> Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+                    <div class="collapse navbar-collapse" id="nav1">
+                        <div class="navbar-left ">
+                            <div class="nav-item">
+                                <a class="nav-link active btncolor btn" href="/everything"><h5> News </h5></a>
+                                <a class="nav-link active btncolor btn" href="/sportsnews"><h5> Sports </h5></a>
+                                <a class="nav-link active btncolor btn" href="/entertainment"><h5> Entertainment </h5></a>
+                                <a class="nav-link active btncolor btn" href="/technology"><h5> Technology </h5></a>
+                                <a class="nav-link active btncolor btn" href="#about"> <h5>About</h5></a>
+                                <a class="nav-link active btncolor btn" href="#contact"><h5> Contact </h5></a>
+
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+        </div>
+
+    </nav>
+</header>
+
+	{% block headline%}
+
+	{% endblock %}
+
+	{% block sportsnews%}
+
+	{% endblock %}
+
+    {% block entertainment%}
+
+	{% endblock %}
+{% block everything%}
+
+	{% endblock %}
+{% block technology%}
+
+	{% endblock %}
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<hr>
+<div>
+<footer class="footer container-fluid">
+    <div class="row">
+        <div id="about" class="col-lg-6 col-sm-12 col-md-6">
+            <h1> About</h1>
+            <hr>
+            <br>
+            <p>This is simple Web Application developed using DJANGO framework.
+            This web application lets you access TOP headlines and News across the World. This web application is developed by
+                <a href="https://www.linkedin.com/in/antarikshkalita/" target="_blank"><h4>ANTARIKSH KALITA</h4></a>
+            </p>
+            <div class="container">
+                  <ul class="items">
+                      <li>
+                <h8><a href="https://www.linkedin.com/in/antarikshkalita/"><img class="float-left" src="{%static 'icons/linkedin.png' %}" style="width:5%; height:5%;">Antariksh Kalita LinkedIn</a></h8>
+                      </li>
+                       <li>
+                <h8><a href=https://github.com/TheBugKing"><img class="float-left" src="{%static 'icons/github.png' %}" style="width:5%; height:5%;">Antariksh Kalita GitHub</a></h8>
+                      </li>
+                  </ul>
+
+
+
+            </div>
+
+
+        </div>
+
+        <div class="col-lg-6 col-sm-12 col-md-6" id="contact">
+            <div class="container">
+               <h1>Contact</h1>
+                <hr>
+                <h7>Email</h7>:<h5>antarikshkalita@gmail.com</h5>
+
+                <hr>
+                <div>
+                    <h1><b>Powered By</b></h1>
+                    <hr>
+                    <h4><a href="https://newsapi.org/"> News API .org</a></h4>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </footer>
+</div>
+
+
+
+
+<script src="{% static 'js/jquery-3.3.1.js' %}"> </script>
+<script src="{% static 'js/jquery.min.js' %}"> </script>
+<script src="{% static 'js/custom.js' %}"> </script>
+</body>
+</html>

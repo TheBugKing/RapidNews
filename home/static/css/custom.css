@@ -1,0 +1,79 @@
+.thumb{
+width:400px ;
+height:200px;
+
+}
+.container_background{
+background-color: rgba(230, 229, 228,0.5);
+padding:10px;
+
+border-radius:10px 35px 10px 35px;
+}
+.margintop{
+margintop:5px;}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height:100%;
+}
+.divpadding{
+padding:5px;
+}
+.boxshawdow{
+    box-shadow: 10px 10px 5px grey;
+}
+.boxshawdow:hover{
+
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.footer{
+background:black;
+color:rgba(230, 229, 228,0.9);
+width:100%;
+height:80%;
+
+}
+
+.boxshawdowcontainer{
+    box-shadow: 10px 10px 20px black;
+}
+.btncolor{
+color: rgb(230, 229, 228);
+height:10px;
+}
+
+.btncolor:hover{
+color:grey;
+height:10px;
+}
+.pad{
+    margin-left: 50px;
+    margin-right: auto;
+
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+

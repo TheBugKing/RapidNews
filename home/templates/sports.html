@@ -1,0 +1,37 @@
+{% extends "base.html"%}
+
+{% block sportsnews %}
+<div class="container-fluid">
+    {% for k in sports.articles %}
+    <div class="row  margintop card text-center boxshawdowcontainer">
+        <div class=" col-sm-6 col-lg-11 ">
+            <div class="container divpadding  ">
+                <div class="title">
+                    <div class="text-center">
+
+                        <h3><b>{{k.source.name}}</b></h3>
+                        <h5>By</h5><h4>{{k.author}}</h4>
+                        <h5>Published at {{k.publishedAt}}</h5>
+                    </div>
+                    <h2><u> <b>{{k.title}}</b> </u></h2>
+                </div>
+
+                <div class="container container_background pad boxshawdow">
+                    <h4 class="text-left">{{k.description}}</h4>
+                    <a href="{{k.url}}" target="_blank"><img class="img thumbnail col-lg-12" src="{{k.urlToImage }}"
+                                                             alt="{{k.url}}"></a>
+                </div>
+                <div>
+                    <a class="link url" href="{{k.url}}"><h6>{{k.url}}</h6></a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    {% endfor %}
+</div>
+
+{% endblock %}
